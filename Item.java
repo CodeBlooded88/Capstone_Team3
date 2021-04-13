@@ -10,5 +10,14 @@ package capstone_team3;
  * @author Christina
  */
 public class Item {
-    
+    int itemID;
+    int itemStock;
+    boolean itemAvailable;
+    String itemImageName; //Not sure what else to do for images in java
+    String itemName; // Implies Item Flavor
+    String itemDescription;
+    String itemIngredients;
+    String itemNutritionFacts;
+    String itemStatusReason;
+    ArrayList<String> itemFeedback; //May need to change later
 }
