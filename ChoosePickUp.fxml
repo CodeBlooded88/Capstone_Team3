@@ -11,14 +11,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="473.0" prefWidth="446.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="418.0" prefWidth="446.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testapphere.FXMLDocumentController">
    <children>
-      <Text layoutX="40.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select your pickup time:">
+      <Text layoutX="40.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select your pickup Date:">
          <font>
             <Font name="Comic Sans MS" size="24.0" />
          </font>
       </Text>
-      <Button fx:id="StartOrderButton" layoutX="137.0" layoutY="354.0" mnemonicParsing="false" style="-fx-background-color: #002F87;" text="Review Order   --&gt;" textFill="WHITE">
+      <Button fx:id="GoToPayBtn" layoutX="106.0" layoutY="347.0" mnemonicParsing="false" onAction="#GoToPay" style="-fx-background-color: #002F87;" text="Continue to Payment   --&gt;" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font></Button>
@@ -27,20 +27,34 @@
             <Image url="@Screenshot%202021-04-25%20154653.png" />
          </image>
       </ImageView>
-      <RadioButton layoutX="50.0" layoutY="216.0" mnemonicParsing="false" text="Schedule">
-         <toggleGroup>
-            <ToggleGroup fx:id="ScheduleMethod" />
-         </toggleGroup>
+      <TextField fx:id="Month" layoutX="123.0" layoutY="164.0" prefHeight="39.0" prefWidth="109.0" promptText="ex. January" />
+      <TextField fx:id="Hour" layoutX="106.0" layoutY="283.0" prefHeight="39.0" prefWidth="51.0" promptText="ex. 8" />
+      <Text layoutX="40.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select your pickup Time:">
          <font>
-            <Font name="Comic Sans MS" size="18.0" />
+            <Font name="Comic Sans MS" size="24.0" />
          </font>
-      </RadioButton>
-      <RadioButton layoutX="50.0" layoutY="174.0" mnemonicParsing="false" text="As Soon As Ready" toggleGroup="$ScheduleMethod">
+      </Text>
+      <TextField fx:id="Minute" layoutX="299.0" layoutY="283.0" prefHeight="39.0" prefWidth="68.0" promptText="ex. 00" />
+      <Text layoutX="40.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hour:">
          <font>
-            <Font name="Comic Sans MS" size="18.0" />
+            <Font size="24.0" />
          </font>
-      </RadioButton>
-      <TextField layoutX="88.0" layoutY="266.0" prefHeight="39.0" prefWidth="109.0" promptText="Select Date" />
-      <TextField layoutX="240.0" layoutY="266.0" prefHeight="39.0" prefWidth="109.0" promptText="Select Time" />
+      </Text>
+      <Text layoutX="207.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minute:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="40.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="241.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Day" layoutX="299.0" layoutY="164.0" prefHeight="39.0" prefWidth="68.0" promptText="ex. 30" />
    </children>
 </AnchorPane>

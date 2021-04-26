@@ -11,14 +11,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="473.0" prefWidth="446.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="405.0" prefWidth="446.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testapphere.FXMLDocumentController">
    <children>
       <Text layoutX="40.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select your payment method">
          <font>
             <Font name="Comic Sans MS" size="24.0" />
          </font>
       </Text>
-      <Button fx:id="StartOrderButton" layoutX="112.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: #002F87;" text="Enter Payment Info  --&gt;" textFill="WHITE">
+      <Button fx:id="GoToFillerScreen" layoutX="231.0" layoutY="328.0" mnemonicParsing="false" onAction="#SubmitOrder" style="-fx-background-color: #002F87;" text="Enter Payment Info" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font></Button>
@@ -27,28 +27,31 @@
             <Image url="@Screenshot%202021-04-25%20154653.png" />
          </image>
       </ImageView>
-      <RadioButton layoutX="50.0" layoutY="216.0" mnemonicParsing="false" text="Flex - Meal Plan">
+      <MenuButton layoutX="40.0" layoutY="177.0" mnemonicParsing="false" style="-fx-background-color: #cef7c8;" text="Payment ">
+         <items>
+            <MenuItem fx:id="Credit" mnemonicParsing="false" onAction="#creditPay" text="Credit Card" />
+            <MenuItem fx:id="Flexchoice" mnemonicParsing="false" onAction="#flexPay" text="Flex - Meal Plan" />
+            <MenuItem fx:id="Flyer" mnemonicParsing="false" onAction="#flyerPay" text="Flyer Card" />
+            <MenuItem fx:id="Cash" mnemonicParsing="false" onAction="#cashPay" text="Cash" />
+         </items>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </MenuButton>
+      <Label layoutX="23.0" layoutY="249.0" text="Selected Payment:">
          <font>
             <Font name="Comic Sans MS" size="18.0" />
          </font>
-         <toggleGroup>
-            <ToggleGroup fx:id="PaymentMethod" />
-         </toggleGroup>
-      </RadioButton>
-      <RadioButton layoutX="50.0" layoutY="174.0" mnemonicParsing="false" text="Credit Card" toggleGroup="$PaymentMethod">
+      </Label>
+      <Label fx:id="PaymentChosen" layoutX="200.0" layoutY="249.0" prefHeight="27.0" prefWidth="206.0">
          <font>
-            <Font name="Comic Sans MS" size="18.0" />
+            <Font size="18.0" />
          </font>
-      </RadioButton>
-      <RadioButton layoutX="50.0" layoutY="307.0" mnemonicParsing="false" text="Cash" toggleGroup="$PaymentMethod">
+      </Label>
+      <Button fx:id="cancelOrder" layoutX="32.0" layoutY="327.0" mnemonicParsing="false" onAction="#CancelOrder" prefHeight="41.0" prefWidth="156.0" style="-fx-background-color: #002F87;" text="cancel Order" textFill="WHITE">
          <font>
-            <Font name="Comic Sans MS" size="18.0" />
+            <Font size="18.0" />
          </font>
-      </RadioButton>
-      <RadioButton layoutX="50.0" layoutY="263.0" mnemonicParsing="false" text="Flyer Card" toggleGroup="$PaymentMethod">
-         <font>
-            <Font name="Comic Sans MS" size="18.0" />
-         </font>
-      </RadioButton>
+      </Button>
    </children>
 </AnchorPane>

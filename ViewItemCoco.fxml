@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="563.0" prefWidth="440.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testapphere.FXMLDocumentController">
+   <children>
+      <Text layoutX="68.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chocolate Ice Cream">
+         <font>
+            <Font name="Cooper Black" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="218.0" fitWidth="210.0" layoutX="37.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Chocolate.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="385.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Header.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewCart" fitHeight="67.0" fitWidth="75.0" layoutX="377.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ViewCartImage.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="37.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sample Description: INSERT SAMPLE DESCRIPTION HEREE" wrappingWidth="317.23974609375" />
+      <Button fx:id="StartOrderButton41" layoutX="37.0" layoutY="469.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="165.0" style="-fx-background-color: #cef7c8;" text="View Ingredients" />
+      <Button fx:id="StartOrderButton42" layoutX="37.0" layoutY="511.0" mnemonicParsing="false" style="-fx-background-color: #cef7c8;" text="View Nutritional Facts" />
+      <Button fx:id="ReturnToMenu" layoutX="246.0" layoutY="511.0" mnemonicParsing="false" onAction="#returnToMenu" prefHeight="31.0" prefWidth="165.0" style="-fx-background-color: #cef7c8;" text="Return to Menu" />
+      <Label fx:id="CarryChoice" layoutX="303.0" layoutY="318.0" prefHeight="21.0" prefWidth="51.0" />
+      <Label layoutX="263.0" layoutY="318.0" text="In a :" />
+      <Label fx:id="ScoopsNum" layoutX="323.0" layoutY="215.0" prefHeight="21.0" prefWidth="51.0" />
+      <Label layoutX="263.0" layoutY="215.0" text="Scoops:" />
+      <MenuButton layoutX="263.0" layoutY="266.0" mnemonicParsing="false" style="-fx-background-color: #cef7c8;" text="Cup or Cone?">
+         <items>
+            <MenuItem fx:id="Cup" mnemonicParsing="false" onAction="#updateHoldCup" text="Cup" />
+            <MenuItem fx:id="Cone" mnemonicParsing="false" onAction="#updateHoldCone" text="Cone" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="263.0" layoutY="168.0" mnemonicParsing="false" style="-fx-background-color: #cef7c8;" text="How Many Scoops?">
+         <items>
+            <MenuItem fx:id="oneVanilla" mnemonicParsing="false" onAction="#updateScoop1Coca" text="1 Scoop" />
+            <MenuItem fx:id="twoVanilla" mnemonicParsing="false" onAction="#updateScoop2Coca" text="2 Scoops" />
+            <MenuItem fx:id="threeVanilla" mnemonicParsing="false" onAction="#updateScoop3Coca" text="3 Scoops" />
+         </items>
+      </MenuButton>
+      <Button fx:id="Vanilla" layoutX="246.0" layoutY="469.0" mnemonicParsing="false" onAction="#PlaceOrder" prefHeight="31.0" prefWidth="165.0" style="-fx-background-color: #cef7c8;" text="Place Order" />
+   </children>
+</AnchorPane>

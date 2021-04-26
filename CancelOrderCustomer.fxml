@@ -11,18 +11,18 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="306.0" prefWidth="405.0" style="-fx-background-color: #dfeaeb; -fx-border-radius: 15;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="306.0" prefWidth="405.0" style="-fx-background-color: #dfeaeb; -fx-border-radius: 15;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testapphere.FXMLDocumentController">
    <children>
       <Text fill="#616161" layoutX="36.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you sure you want to cancel your order?" textAlignment="CENTER" wrappingWidth="332.9921875">
          <font>
             <Font name="Comic Sans MS" size="24.0" />
          </font>
       </Text>
-      <Button fx:id="StartOrderButton" layoutX="143.0" layoutY="134.0" mnemonicParsing="false" style="-fx-background-color: #dfeaeb; -fx-border-color: #616161; -fx-border-radius: 15;" text="No, go back" textFill="#616161">
+      <Button fx:id="returnToPay" layoutX="143.0" layoutY="134.0" mnemonicParsing="false" onAction="#ReturnToPay" style="-fx-background-color: #dfeaeb; -fx-border-color: #616161; -fx-border-radius: 15;" text="No, go back" textFill="#616161">
          <font>
             <Font size="18.0" />
          </font></Button>
-      <Button fx:id="StartOrderButton1" layoutX="125.0" layoutY="195.0" mnemonicParsing="false" style="-fx-background-color: #dfeaeb; -fx-border-color: #616161; -fx-border-radius: 15;" text="yes, cancel order" textFill="#7a7a7a">
+      <Button fx:id="ReturnToMenu" layoutX="125.0" layoutY="195.0" mnemonicParsing="false" onAction="#returnToMenu" style="-fx-background-color: #dfeaeb; -fx-border-color: #616161; -fx-border-radius: 15;" text="yes, cancel order" textFill="#7a7a7a">
          <font>
             <Font size="18.0" />
          </font>

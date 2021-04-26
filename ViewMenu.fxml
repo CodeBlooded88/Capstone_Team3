@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="769.0" prefWidth="447.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testapphere.FXMLDocumentController">
+   <children>
+      <Text fx:id="MenuFlavors" layoutX="87.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ice Cream Flavors" textAlignment="CENTER">
+         <font>
+            <Font name="Cooper Black" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="CookieDough" fitHeight="113.0" fitWidth="125.0" layoutX="298.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@CookieDoughIceCream.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="385.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Header.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ViewCart" fitHeight="67.0" fitWidth="75.0" layoutX="377.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ViewCartImage.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PBChip" fitHeight="113.0" fitWidth="125.0" layoutX="298.0" layoutY="563.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PeanutButterChip.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MintCho" fitHeight="113.0" fitWidth="125.0" layoutX="18.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Mint%20Chocolate%20Chip.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Strawberry" fitHeight="113.0" fitWidth="125.0" layoutX="297.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Strawberry.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Chocolate" fitHeight="113.0" fitWidth="125.0" layoutX="153.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Chocolate.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="vanilla" fitHeight="113.0" fitWidth="125.0" layoutX="22.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Vanilla.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="CookiesNCream" fitHeight="113.0" fitWidth="125.0" layoutX="154.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@CookiesAndCream.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MonthlyFlavor" fitHeight="113.0" fitWidth="125.0" layoutX="153.0" layoutY="563.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FlavorOfTheMonth.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BRChip" fitHeight="113.0" fitWidth="125.0" layoutX="16.0" layoutY="563.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BlackRaspberyChip.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="MenuFlavors1" layoutX="93.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 scoop: " textAlignment="CENTER" wrappingWidth="134.173828125">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="MenuFlavors11" layoutX="93.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 scoop: " textAlignment="CENTER" wrappingWidth="134.173828125">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="MenuFlavors12" layoutX="93.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 scoop: " textAlignment="CENTER" wrappingWidth="134.173828125">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="MenuFlavors15" layoutX="219.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.00" textAlignment="CENTER" wrappingWidth="134.173828125">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="MenuFlavors17" layoutX="219.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.88" textAlignment="CENTER" wrappingWidth="134.173828125">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="MenuFlavors18" layoutX="219.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.66" textAlignment="CENTER" wrappingWidth="134.173828125">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="VanillaBtn" layoutX="21.0" layoutY="338.0" mnemonicParsing="false" onAction="#VBtnClick" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: #cef7c8;" text="Vanilla">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="CocoBtn" layoutX="150.0" layoutY="338.0" mnemonicParsing="false" onAction="#CocoBtnClick" prefHeight="33.0" prefWidth="119.0" style="-fx-background-color: #cef7c8;" text="Chocolate">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="SberryBtn" layoutX="286.0" layoutY="338.0" mnemonicParsing="false" onAction="#SBerryBtnClick" prefHeight="33.0" prefWidth="134.0" style="-fx-background-color: #cef7c8;" text="Strawberry">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="MintBtn" layoutX="13.0" layoutY="513.0" mnemonicParsing="false" onAction="#MintBtnClick" prefHeight="33.0" prefWidth="119.0" style="-fx-background-color: #cef7c8;" text="Mint Chip">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="CookiesNCreamBtn" layoutX="134.0" layoutY="513.0" mnemonicParsing="false" onAction="#CCBtnClick" prefHeight="33.0" prefWidth="150.0" style="-fx-background-color: #cef7c8;" text="CookieCream">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="CookieDoughBtn" layoutX="286.0" layoutY="513.0" mnemonicParsing="false" onAction="#CDBtnClick" prefHeight="33.0" prefWidth="150.0" style="-fx-background-color: #cef7c8;" text="CookieDough">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="BlkRaspBtn" layoutX="2.0" layoutY="696.0" mnemonicParsing="false" onAction="#BRBtnClick" prefHeight="33.0" prefWidth="141.0" style="-fx-background-color: #cef7c8;" text="B.Rasp Chip">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="MysteryBtn" layoutX="150.0" layoutY="696.0" mnemonicParsing="false" onAction="#MystBtnClick" prefHeight="33.0" prefWidth="119.0" style="-fx-background-color: #cef7c8;" text="Mystery">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="PeanutBtn" layoutX="278.0" layoutY="696.0" mnemonicParsing="false" onAction="#PeanutBtnClick" prefHeight="33.0" prefWidth="150.0" style="-fx-background-color: #cef7c8;" text="Peanutbutter">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
